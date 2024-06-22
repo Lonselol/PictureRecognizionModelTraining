@@ -1,6 +1,6 @@
 import torchvision
 import torch
-import coremltools as ct
+import coremltools as ct 
 import os
 
 def main():
