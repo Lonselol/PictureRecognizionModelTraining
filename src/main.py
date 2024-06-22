@@ -1,12 +1,11 @@
 import os
 import tensorflow as tf
-from keras._tf_keras.keras.applications import MobileNet
-from tensorflow.keras.applications import MobileNet
+from keras.applications.mobilenet_v2 import MobileNetV2
 import coremltools as ct
 
 def main():
     # Загрузка предобученной модели MobileNet
-    model = MobileNet(weights='imagenet')
+    model = MobileNetV2(weights='imagenet')
 
     # Конвертация модели в формат Core ML
     coreml_model = ct.convert(model, source='tensorflow')
