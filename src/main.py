@@ -1,6 +1,7 @@
 import os
 import tensorflow as tf
 from keras._tf_keras.keras.applications import MobileNet
+from tensorflow.keras.applications import MobileNet
 import coremltools as ct
 
 def main():
