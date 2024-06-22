@@ -23,8 +23,8 @@ def main():
 
     # Определение пути для сохранения модели
     output_path = 'MobileNet.mlmodel'
-    #output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
-    #output_path = os.path.join(output_dir, 'MobileNet.mlmodel')
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
+    output_path = os.path.join(output_dir, 'MobileNet.mlmodel')
 
     # Сохранение модели
     model.save(output_path)
